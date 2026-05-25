@@ -7,51 +7,41 @@ import requests
 from tokenizers import Tokenizer  
 
 class ChatbotEngine_V4:
-    def __init__(self, db_path, intents_path="data/intents.json", onnx_model_path="models/model.onnx", tokenizer_path="data/tokenizer.json"):
-        print("🤖 Khởi tạo Engine V4 [LAN Hybrid LLM & NumPy Vectorized Cache Ready]...")
+    def __init__(self, db_path="database_v2.json", intents_path="data/intents.json", onnx_model_path="models/model.onnx", tokenizer_path="data/tokenizer.json"):
+        print("🤖 Khởi tạo Engine V4 [Clean Architecture & Data-Driven Routing]...")
         
         self.db_path = db_path
         self.intents_path = intents_path
         self.onnx_model_path = onnx_model_path
         self.tokenizer_path = tokenizer_path
         
-        # 🏎️ TỐI ƯU HÓA ONNX RUNTIME DÀNH RIÊNG CHO RASPBERRY PI 4 (4 CORES)
+        # 🏎️ TỐI ƯU HÓA ONNX RUNTIME DÀNH RIÊNG CHO RASPBERRY PI 4
         opts = ort.SessionOptions()
-        opts.intra_op_num_threads = 4  # Khai thác toàn bộ 4 nhân physical của Pi 4
+        opts.intra_op_num_threads = 4  
         opts.execution_mode = ort.ExecutionMode.ORT_SEQUENTIAL
         opts.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
         
         self.ort_session = ort.InferenceSession(onnx_model_path, sess_options=opts, providers=['CPUExecutionProvider'])
         self.tokenizer = Tokenizer.from_file(tokenizer_path)
         
-        # Cấu hình bộ nhớ đệm Cache
         self.l1_cache = {}       
         self.l2_cache = []       
         
         self.l2_threshold = 0.88       
         self.global_intent_threshold = 0.68  
-        self.static_intent_threshold = 0.72  
         self.max_l2_size = 300
-        
-        # 🎯 BỘ LỌC TỪ KHÓA BẢO VỆ INTENT CHÍNH (Chỉ dùng để bổ trợ lọc nhiễu diện hẹp)
-        self.intent_keywords = {
-            "gia_ca": ["giá", "nhiêu", "tiền", "phí", "bảng giá", "mua", "niêm yết", "lăn bánh", "triệu", "vnd"],
-            "thong_so": ["thông số", "vận tốc", "tốc độ", "pin", "acquy", "ắc quy", "km", "sạc", "watt", "công suất", "động cơ", "cao", "nặng", "cốp", "xa", "dài", "rộng"],
-            "bao_hanh": ["bảo hành", "sửa", "lỗi", "bảo dưỡng", "định kỳ", "trạm", "lâu", "hỏng", "bảo trì"]
-        }
         
         self.pc_llm_url = "http://192.168.1.50:11434/v1/chat"  
         self.reload_database()
-        print("✅ Hệ thống Hybrid V4 kết hợp Màng lọc Ngữ nghĩa sẵn sàng!")
+        print("✅ Hệ thống Hybrid V4 sẵn sàng!")
 
     def _normalize_for_cache(self, text):
-        """CHUẨN HÓA ĐỒNG BỘ: Xóa dấu câu, chuẩn hóa khoảng trắng, đưa về ký tự thường"""
-        text = re.sub(r'[^\w\sÀ-ỹ]', ' ', text)  # Giữ lại toàn bộ dải ký tự tiếng Việt có dấu
+        text = re.sub(r'[^\w\s]', ' ', text)  
         return " ".join(text.lower().strip().split())
 
     def reload_database(self):
         start_reload = time.time()
-        print("🔄 [V4] Đang nạp cấu hình và tiến hành Vector hóa ngữ nghĩa...")
+        print("🔄 [V4] Đang nạp cấu hình và tiến hành Vector hóa...")
         
         with open(self.db_path, "r", encoding="utf-8") as f:
             self.db = json.load(f)
@@ -61,19 +51,15 @@ class ChatbotEngine_V4:
         self.l1_cache.clear()
         self.l2_cache.clear()
 
-        # 1. Vector hóa Ý định (Intents Matrix)
+        # 1. Vector hóa Ý định (Đọc động từ JSON, không hardcode)
         self.intent_matrices = {}
-        self.global_intent_labels = {
-          "gia_ca": ["giá bán chính thức bao nhiêu tiền", "chi phí lăn bánh", "mua xe hết bao nhiêu", "bảng giá xe máy điện", "giá niêm yết chính thức"],
-          "thong_so": ["thông số kỹ thuật chi tiết", "vận tốc tối đa đạt bao nhiêu", "dung lượng pin chạy được bao nhiêu km", "công suất động cơ bao nhiêu watt"],
-          "bao_hanh": ["chính sách bảo hành mấy năm", "sửa chữa xe gặp lỗi", "lịch bảo dưỡng định kỳ", "bảo hành pin như thế nào"]
-        }
-        
-        for intent_key, phrases in self.global_intent_labels.items():
-            vectors = [self._get_embedding(self._normalize_for_cache(phrase)) for phrase in phrases]
-            self.intent_matrices[intent_key] = np.vstack(vectors)
+        for intent_key, data in self.intents_config.get("business_rules", {}).items():
+            samples = data.get("samples", [])
+            if samples:
+                vectors = [self._get_embedding(self._normalize_for_cache(phrase)) for phrase in samples]
+                self.intent_matrices[intent_key] = np.vstack(vectors)
             
-        # 2. Xây dựng bộ từ điển thực thể phân cấp (Tránh lỗi \b Tiếng Việt bằng Lookarounds)
+        # 2. Xây dựng từ điển thực thể phân cấp
         self.brands = {}
         if "xe_may_dien" in self.db:
             for brand_key, models in self.db["xe_may_dien"].items():
@@ -93,23 +79,20 @@ class ChatbotEngine_V4:
                         "model_key": model_key,
                         "search_terms": sorted(list(set(search_terms)), key=len, reverse=True)
                     })
-                
                 self.brands[brand_key] = {
                     "search_terms": brand_names,
                     "models": sorted(model_list, key=lambda x: max(len(t) for t in x["search_terms"]), reverse=True)
                 }
 
-        # 🎯 3. MÀNG LỌC NGỮ NGHĨA TƯƠNG PHẢN (Dùng thay thế hoàn toàn cho lọc từ khóa thô)
-        # Tập Anchor Hợp lệ (In-Domain)
+        # 3. MÀNG LỌC TƯƠNG PHẢN (Cập nhật từ khóa an toàn)
         self.ev_anchor_phrases = [
             "sạc pin xe máy điện ở đâu", "xe điện đi trời mưa có sao không", "tuổi thọ pin lfp bao lâu", 
             "hết điện giữa đường thì làm sao", "sạc qua đêm có cháy nổ không", "so sánh pin lithium và ắc quy chì",
-            "chi phí sạc điện một tháng bao nhiêu", "bảo dưỡng xe máy điện gồm những gì", "xe máy điện đăng ký biển số"
+            "chi phí sạc điện một tháng bao nhiêu", "bảo dưỡng xe máy điện gồm những gì", "giá bán", "thông số kỹ thuật", "chính sách bảo hành"
         ]
         ev_vectors = [self._get_embedding(self._normalize_for_cache(phrase)) for phrase in self.ev_anchor_phrases]
         self.ev_domain_matrix = np.vstack(ev_vectors)
 
-        # Tập Anchor Lạc đề / Rác (Out-of-Domain) - Dùng ngữ nghĩa để bắt trọn mọi biến thể vô nghĩa
         self.out_of_scope_phrases = [
             "hướng dẫn nấu ăn ngon tại nhà", "cách nấu cơm nấu phở luộc gà", "nghe bài hát mới của ca sĩ",
             "lên kế hoạch đi đá bóng đá banh", "giải bài toán hình học đại số", "thời tiết hôm nay thế nào",
@@ -118,7 +101,7 @@ class ChatbotEngine_V4:
         out_vectors = [self._get_embedding(self._normalize_for_cache(phrase)) for phrase in self.out_of_scope_phrases]
         self.out_of_scope_matrix = np.vstack(out_vectors)
 
-        print(f"⚡ Đã tối ưu xong không gian Vector! Thời gian: {round(time.time() - start_reload, 3)} giây!")
+        print(f"⚡ Hoàn tất Data-Driven Pipeline! Thời gian: {round(time.time() - start_reload, 3)} giây!")
 
     def _get_embedding(self, text):
         full_text = f"query: {text}"
@@ -143,11 +126,10 @@ class ChatbotEngine_V4:
         return embedding / (norm if norm > 0 else 1e-9)
 
     def _extract_entity(self, clean_text):
-        """Sử dụng Lookarounds (?<!\w) để loại bỏ hoàn toàn lỗi nhận diện sai ký tự Tiếng Việt của \\b"""
         detected_brand = None
         for brand_key, brand_data in self.brands.items():
             for term in brand_data["search_terms"]:
-                pattern = r'(?<![a-zA-Z0-9_À-ỹ])' + re.escape(term) + r'(?![a-zA-Z0-9_À-ỹ])'
+                pattern = r'(?<![\w])' + re.escape(term) + r'(?![\w])'
                 if re.search(pattern, clean_text):
                     detected_brand = brand_key
                     break
@@ -157,7 +139,7 @@ class ChatbotEngine_V4:
             for model in self.brands[detected_brand]["models"]:
                 for term in model["search_terms"]:
                     if term:
-                        pattern = r'(?<![a-zA-Z0-9_À-ỹ])' + re.escape(term) + r'(?![a-zA-Z0-9_À-ỹ])'
+                        pattern = r'(?<![\w])' + re.escape(term) + r'(?![\w])'
                         if re.search(pattern, clean_text):
                             return (detected_brand, model["model_key"])
         else:
@@ -165,25 +147,19 @@ class ChatbotEngine_V4:
                 for model in brand_data["models"]:
                     for term in model["search_terms"]:
                         if term:
-                            pattern = r'(?<![a-zA-Z0-9_À-ỹ])' + re.escape(term) + r'(?![a-zA-Z0-9_À-ỹ])'
+                            pattern = r'(?<![\w])' + re.escape(term) + r'(?![\w])'
                             if re.search(pattern, clean_text):
                                 return (brand_key, model["model_key"])
-                            
         return (detected_brand, None) if detected_brand else None
 
-    def _is_ev_related(self, query_vector, clean_query):
-        """BỘ LỌC TƯƠNG PHẢN MA TRẬN: Xác định xem câu hỏi có thực sự thuộc chủ đề xe điện không"""
-        # Tính toán độ tương đồng đồng thời với tập Hợp lệ và Lạc đề
+    def _is_ev_related(self, query_vector):
         in_domain_sim = np.max(np.dot(self.ev_domain_matrix, query_vector.T).flatten())
         out_domain_sim = np.max(np.dot(self.out_of_scope_matrix, query_vector.T).flatten())
         
-        # Nếu điểm số Vector nghiêng hẳn về chủ đề ngoài ngành hoặc điểm số ngành quá thấp -> Chặn đứng
         if out_domain_sim > in_domain_sim and out_domain_sim > 0.50:
             return False
-        
         if in_domain_sim >= 0.52:  
             return True
-            
         return False
 
     def _call_pc_llm_via_lan(self, user_message):
@@ -196,7 +172,7 @@ class ChatbotEngine_V4:
                 if res_json.get("status") == "success":
                     return res_json.get("reply", "").strip()
         except requests.exceptions.RequestException as e:
-            print(f"⚠️ Thất bại khi kết nối tới LLM Server qua mạng LAN: {e}")
+            print(f"⚠️ Thất bại khi kết nối tới LLM Server: {e}")
         return None
 
     def get_response(self, user_query):
@@ -204,21 +180,31 @@ class ChatbotEngine_V4:
         clean_query = self._normalize_for_cache(user_query)
         
         if not clean_query:
-            return "Dạ em chào anh/chị, anh/chị cần hỗ trợ gì về xe máy điện không ạ?", round(time.time() - start_time, 4), "EMPTY_QUERY"
+            return "Dạ em chào anh/chị, anh/chị cần hỗ trợ gì ạ?", round(time.time() - start_time, 4), "EMPTY_QUERY"
             
+        # 🚀 TẦNG 1: L1 CACHE
         if clean_query in self.l1_cache:
             return self.l1_cache[clean_query], round(time.time() - start_time, 4), "L1_HIT"
             
+        # 🚀 TẦNG 2: FAST FAQ TRIAGE (Duyệt qua Regex động)
+        for intent_name, data in self.intents_config.get("faq", {}).items():
+            pattern = r'(?<![\w])(' + '|'.join(re.escape(kw) for kw in data["keywords"]) + r')(?![\w])'
+            if re.search(pattern, clean_query):
+                final_reply = data["response_template"]
+                self.l1_cache[clean_query] = final_reply
+                # Trả về luôn mà không chạy NLU
+                return final_reply, round(time.time() - start_time, 4), "CACHE_MISS"
+
         current_entity = self._extract_entity(clean_query)
         query_vector = self._get_embedding(clean_query)
 
-        # 🛡️ KIỂM TRA ĐỘ LẠC ĐỀ NGAY TẠI EDGE BẰNG MA TRẬN TƯƠNG PHẢN
-        if not self._is_ev_related(query_vector, clean_query) and not current_entity:
+        # 🚀 TẦNG 3: SEMANTIC REJECT
+        if not self._is_ev_related(query_vector) and not current_entity:
             fallback_msg = "Dạ, hiện tại em chưa hiểu rõ ý của anh/chị. Anh/chị có thể hỏi cụ thể hơn về Giá cả, Thông số kỹ thuật hoặc Bảo hành của các dòng xe máy điện được không ạ?"
             self.l1_cache[clean_query] = fallback_msg
             return fallback_msg, round(time.time() - start_time, 4), "SEMANTIC_REJECT"
 
-        # Định tuyến Ý định (Intent Routing)
+        # Định tuyến Ý định NLU
         current_intent = None
         intent_scores = {}
         for intent_key, matrix in self.intent_matrices.items():
@@ -228,13 +214,9 @@ class ChatbotEngine_V4:
         if intent_scores:
             best_intent, max_intent_score = max(intent_scores.items(), key=lambda x: x[1])
             if max_intent_score >= self.global_intent_threshold:
-                if best_intent in self.intent_keywords:
-                    if any(kw in clean_query for kw in self.intent_keywords[best_intent]):
-                        current_intent = best_intent
-                else:
-                    current_intent = best_intent
+                current_intent = best_intent
 
-        # TẦNG 2: CACHE L2 
+        # 🚀 TẦNG 4: L2 CACHE
         best_l2_match = None
         max_l2_similarity = -1
         matching_indices = [
@@ -255,11 +237,12 @@ class ChatbotEngine_V4:
             self.l1_cache[clean_query] = final_reply 
             return final_reply, round(time.time() - start_time, 4), f"L2_HIT ({round(max_l2_similarity * 100, 1)}%)"
 
-        # TẦNG 3: TRUY XUẤT CƠ SỞ DỮ LIỆU GỐC CỤC BỘ
+        # 🚀 TẦNG 5: BUSINESS LOGIC & DB EXTRACTION
         final_reply = None
         cache_status = "CACHE_MISS"
         
-        if current_intent in ["gia_ca", "thong_so", "bao_hanh"]:
+        business_rules = self.intents_config.get("business_rules", {})
+        if current_intent in business_rules:
             if current_entity and isinstance(current_entity, tuple) and current_entity[1]:
                 brand_key, model_key = current_entity
                 entity_data = self.db.get("xe_may_dien", {}).get(brand_key, {}).get(model_key)
@@ -274,27 +257,31 @@ class ChatbotEngine_V4:
                     elif current_intent == "bao_hanh" and "bao_hanh" in attrs:
                         final_reply = f"Dạ, chính sách của {ten_xe}: {attrs['bao_hanh']['value']}"
             else:
-                has_explicit_keyword = any(kw in clean_query for kw in self.intent_keywords.get(current_intent, []))
-                if has_explicit_keyword:
-                    intent_names = {"gia_ca": "giá bán", "thong_so": "thông số kỹ thuật", "bao_hanh": "chính sách bảo hành"}
-                    final_reply = f"Dạ, em hiểu anh/chị cần hỏi về {intent_names[current_intent]}, nhưng anh/chị đang quan tâm cụ thể hãng hay mẫu xe nào ạ (VD: VinFast, Yadea, Dat Bike...)?"
+                # KIỂM TRA CHÉO (CROSS-CHECK) CHỐNG ẢO GIÁC NLU
+                rule_data = business_rules[current_intent]
+                pattern = r'(?<![\w])(' + '|'.join(re.escape(kw) for kw in rule_data["keywords"]) + r')(?![\w])'
+                if re.search(pattern, clean_query):
+                    final_reply = rule_data["missing_entity_response"]
+                else:
+                    # Nếu ONNX đoán nhầm, hủy bỏ Intent để ép xuống Tầng 6 (LLM xử lý)
+                    current_intent = None
 
-        # 🌐 TẦNG 4: CHUYỂN TIẾP SANG PC FLASK LLM SERVER
+        # 🚀 TẦNG 6: PC FLASK LLM SERVER
         if not final_reply:
             print("🌐 Gửi yêu cầu phân tích chuyên sâu qua mạng LAN tới PC LLM...")
             llm_reply = self._call_pc_llm_via_lan(user_query)
             if llm_reply:
                 if "OUT_OF_SCOPE_TRIGGERED" in llm_reply:
-                    final_reply = "Dạ, hiện tại em chưa hiểu rõ ý của anh/chị. Anh/chị có thể hỏi cụ thể hơn về các vấn đề kỹ thuật hoặc thông tin xe máy điện được không ạ?"
+                    final_reply = "Dạ, hiện tại em chưa hiểu rõ ý của anh/chị. Anh/chị có thể hỏi cụ thể hơn về Giá cả, Thông số hoặc Bảo hành của xe điện được không ạ?"
                     cache_status = "LLM_GUARD_REJECT"
                 else:
                     final_reply = llm_reply
                     cache_status = "PC_LLM_HIT"
 
+        # 🚀 TẦNG 7: FALLBACK CUỐI CÙNG
         if not final_reply:
-            final_reply = "Dạ, hiện tại em chưa hiểu rõ ý của anh/chị hoặc thông tin này nằm ngoài cơ sở dữ liệu. Anh/chị có thể hỏi cụ thể hơn về Giá cả, Thông số hoặc Bảo hành của các dòng xe máy điện được không ạ?"
+            final_reply = "Dạ, hiện tại em chưa hiểu rõ ý của anh/chị hoặc thông tin này nằm ngoài cơ sở dữ liệu. Anh/chị có thể hỏi cụ thể hơn về xe điện được không ạ?"
 
-        # Đồng bộ ngược vào Bộ nhớ đệm Cache
         self.l1_cache[clean_query] = final_reply
         self.l2_cache.append({
             "vector": query_vector,
