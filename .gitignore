@@ -1,0 +1,12 @@
+venv/
+.venv/
+
+__pycache__/
+*.pyc
+
+models/
+*.gguf
+
+.vscode/
+.env
+.cache/

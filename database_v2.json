@@ -1,0 +1,1423 @@
+{
+    "thong_tin_chung": {
+        "danh_sach_xe": "Hiện tại showroom chúng tôi phân phối chính hãng hơn 100 mẫu xe từ các thương hiệu: VinFast, Yadea, Pega, Dat Bike..."
+    },
+    "xe_may_dien": {
+        "vinfast": {
+            "pansy_v": {
+                "ten_chuan": "VinFast Pansy V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "55,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin Lithium-ion, Tốc độ đa 65km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "beta": {
+                "ten_chuan": "VinFast Beta",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "50,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Pin LFP, Tốc độ đa 50km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "klara_s": {
+                "ten_chuan": "VinFast Klara S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "38,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin Lithium-ion, Tốc độ đa 78km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "vento_ultra": {
+                "ten_chuan": "VinFast Vento Ultra",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "46,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin Lithium-ion, Tốc độ đa 90km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "max": {
+                "ten_chuan": "VinFast Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "42,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Acquy Chì, Tốc độ đa 78km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "theon_evo": {
+                "ten_chuan": "VinFast Theon Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "40,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 100km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "impes_alpha": {
+                "ten_chuan": "VinFast Impes Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "15,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 50km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "impes_v": {
+                "ten_chuan": "VinFast Impes V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "42,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 65km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "weaver_s": {
+                "ten_chuan": "VinFast Weaver S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "46,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin Lithium-ion, Tốc độ đa 78km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "evo": {
+                "ten_chuan": "VinFast Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "16,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Acquy Chì, Tốc độ đa 90km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "feliz_lite": {
+                "ten_chuan": "VinFast Feliz Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "59,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 78km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "alpha": {
+                "ten_chuan": "VinFast Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "43,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin Lithium-ion, Tốc độ đa 90km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "feliz_s": {
+                "ten_chuan": "VinFast Feliz S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "21,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 78km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "gogo_v": {
+                "ten_chuan": "VinFast Gogo V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "43,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Acquy Chì, Tốc độ đa 100km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "impes_lite": {
+                "ten_chuan": "VinFast Impes Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "51,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 100km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            }
+        },
+        "yadea": {
+            "impes_lite": {
+                "ten_chuan": "Yadea Impes Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "34,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin Lithium-ion, Tốc độ đa 50km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "phantom_lite": {
+                "ten_chuan": "Yadea Phantom Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "23,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 90km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "od3_lite": {
+                "ten_chuan": "Yadea Od3 Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "56,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Acquy Chì, Tốc độ đa 100km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "phantom_max": {
+                "ten_chuan": "Yadea Phantom Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "51,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Acquy Chì, Tốc độ đa 90km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "vento_ultra": {
+                "ten_chuan": "Yadea Vento Ultra",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "24,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 78km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "phantom_x": {
+                "ten_chuan": "Yadea Phantom X",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "49,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin LFP, Tốc độ đa 65km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "klara_ultra": {
+                "ten_chuan": "Yadea Klara Ultra",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "25,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Acquy Chì, Tốc độ đa 78km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "impes_beta": {
+                "ten_chuan": "Yadea Impes Beta",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "52,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "od3_max": {
+                "ten_chuan": "Yadea Od3 Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "31,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Acquy Chì, Tốc độ đa 100km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "weaver_beta": {
+                "ten_chuan": "Yadea Weaver Beta",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "43,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 90km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "max": {
+                "ten_chuan": "Yadea Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "46,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 78km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            }
+        },
+        "pega": {
+            "evo": {
+                "ten_chuan": "Pega Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "35,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin Lithium-ion, Tốc độ đa 90km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "alpha": {
+                "ten_chuan": "Pega Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "28,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 90km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "theon_v": {
+                "ten_chuan": "Pega Theon V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "41,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin LFP, Tốc độ đa 50km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "x": {
+                "ten_chuan": "Pega X",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "52,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 65km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "klara_max": {
+                "ten_chuan": "Pega Klara Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "45,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Pin LFP, Tốc độ đa 90km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "od3_v": {
+                "ten_chuan": "Pega Od3 V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "16,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "impes_evo": {
+                "ten_chuan": "Pega Impes Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "58,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Pin Lithium-ion, Tốc độ đa 78km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "theon_s": {
+                "ten_chuan": "Pega Theon S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "35,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Pin LFP, Tốc độ đa 90km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            }
+        },
+        "dat_bike": {
+            "feliz_alpha": {
+                "ten_chuan": "Dat Bike Feliz Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "28,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin Lithium-ion, Tốc độ đa 90km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "beta": {
+                "ten_chuan": "Dat Bike Beta",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "38,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 100km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "weaver_ultra": {
+                "ten_chuan": "Dat Bike Weaver Ultra",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "23,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Acquy Chì, Tốc độ đa 50km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "v": {
+                "ten_chuan": "Dat Bike V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "42,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 50km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "feliz_s": {
+                "ten_chuan": "Dat Bike Feliz S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "43,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 78km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            }
+        },
+        "honda": {
+            "od3_s": {
+                "ten_chuan": "Honda Od3 S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "38,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin Lithium-ion, Tốc độ đa 90km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "feliz_evo": {
+                "ten_chuan": "Honda Feliz Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "29,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 50km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "impes_max": {
+                "ten_chuan": "Honda Impes Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "21,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin Lithium-ion, Tốc độ đa 90km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "weaver_alpha": {
+                "ten_chuan": "Honda Weaver Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "18,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin LFP, Tốc độ đa 90km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "lite": {
+                "ten_chuan": "Honda Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "58,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Acquy Chì, Tốc độ đa 50km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "vento_s": {
+                "ten_chuan": "Honda Vento S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "54,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Pin Lithium-ion, Tốc độ đa 78km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "v": {
+                "ten_chuan": "Honda V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "19,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin Lithium-ion, Tốc độ đa 65km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "beta": {
+                "ten_chuan": "Honda Beta",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "54,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Acquy Chì, Tốc độ đa 100km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "feliz_ultra": {
+                "ten_chuan": "Honda Feliz Ultra",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "40,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Acquy Chì, Tốc độ đa 78km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "theon_alpha": {
+                "ten_chuan": "Honda Theon Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "18,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 78km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "impes_pro": {
+                "ten_chuan": "Honda Impes Pro",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "37,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "impes_evo": {
+                "ten_chuan": "Honda Impes Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "48,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Acquy Chì, Tốc độ đa 90km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "pansy_v": {
+                "ten_chuan": "Honda Pansy V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "60,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Acquy Chì, Tốc độ đa 100km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "evo": {
+                "ten_chuan": "Honda Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "49,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Acquy Chì, Tốc độ đa 78km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "gogo_pro": {
+                "ten_chuan": "Honda Gogo Pro",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "31,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "impes_lite": {
+                "ten_chuan": "Honda Impes Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "56,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 50km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "ultra": {
+                "ten_chuan": "Honda Ultra",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "34,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin LFP, Tốc độ đa 100km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            }
+        },
+        "yamaha": {
+            "max": {
+                "ten_chuan": "Yamaha Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "44,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin Lithium-ion, Tốc độ đa 65km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "impes_evo": {
+                "ten_chuan": "Yamaha Impes Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "55,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Acquy Chì, Tốc độ đa 90km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "pansy_beta": {
+                "ten_chuan": "Yamaha Pansy Beta",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "48,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Acquy Chì, Tốc độ đa 90km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "klara_v": {
+                "ten_chuan": "Yamaha Klara V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "22,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin LFP, Tốc độ đa 50km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "beta": {
+                "ten_chuan": "Yamaha Beta",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "26,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "vento_lite": {
+                "ten_chuan": "Yamaha Vento Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "22,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Acquy Chì, Tốc độ đa 100km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "theon_pro": {
+                "ten_chuan": "Yamaha Theon Pro",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "42,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin Lithium-ion, Tốc độ đa 65km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "evo": {
+                "ten_chuan": "Yamaha Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "41,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 90km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "klara_pro": {
+                "ten_chuan": "Yamaha Klara Pro",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "47,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 65km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "vento_s": {
+                "ten_chuan": "Yamaha Vento S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "47,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin LFP, Tốc độ đa 65km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "phantom_evo": {
+                "ten_chuan": "Yamaha Phantom Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "34,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 100km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "x": {
+                "ten_chuan": "Yamaha X",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "49,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 78km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "impes_max": {
+                "ten_chuan": "Yamaha Impes Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "42,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 50km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            }
+        },
+        "dibao": {
+            "vento_lite": {
+                "ten_chuan": "Dibao Vento Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "16,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin LFP, Tốc độ đa 78km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "phantom_ultra": {
+                "ten_chuan": "Dibao Phantom Ultra",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "46,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin LFP, Tốc độ đa 100km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "klara_lite": {
+                "ten_chuan": "Dibao Klara Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "23,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "weaver_alpha": {
+                "ten_chuan": "Dibao Weaver Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "31,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Acquy Chì, Tốc độ đa 90km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "alpha": {
+                "ten_chuan": "Dibao Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "37,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 50km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "theon_alpha": {
+                "ten_chuan": "Dibao Theon Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "51,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 78km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "klara_ultra": {
+                "ten_chuan": "Dibao Klara Ultra",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "37,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "theon_v": {
+                "ten_chuan": "Dibao Theon V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "35,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Pin LFP, Tốc độ đa 100km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "pro": {
+                "ten_chuan": "Dibao Pro",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "50,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin Lithium-ion, Tốc độ đa 78km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "beta": {
+                "ten_chuan": "Dibao Beta",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "58,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "max": {
+                "ten_chuan": "Dibao Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "30,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin Lithium-ion, Tốc độ đa 65km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "klara_max": {
+                "ten_chuan": "Dibao Klara Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "28,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Acquy Chì, Tốc độ đa 90km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "od3_max": {
+                "ten_chuan": "Dibao Od3 Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "34,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin Lithium-ion, Tốc độ đa 90km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "theon_ultra": {
+                "ten_chuan": "Dibao Theon Ultra",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "43,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 78km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "weaver_evo": {
+                "ten_chuan": "Dibao Weaver Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "15,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin LFP, Tốc độ đa 90km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            }
+        },
+        "sym": {
+            "v": {
+                "ten_chuan": "Sym V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "15,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin LFP, Tốc độ đa 90km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "x": {
+                "ten_chuan": "Sym X",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "54,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin Lithium-ion, Tốc độ đa 90km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "klara_v": {
+                "ten_chuan": "Sym Klara V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "26,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin Lithium-ion, Tốc độ đa 50km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "theon_x": {
+                "ten_chuan": "Sym Theon X",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "25,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Acquy Chì, Tốc độ đa 65km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "gogo_alpha": {
+                "ten_chuan": "Sym Gogo Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "21,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin LFP, Tốc độ đa 90km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "alpha": {
+                "ten_chuan": "Sym Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "49,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin Lithium-ion, Tốc độ đa 90km/h, Quãng đường 70km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "impes_s": {
+                "ten_chuan": "Sym Impes S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "22,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Acquy Chì, Tốc độ đa 100km/h, Quãng đường 150km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "weaver_s": {
+                "ten_chuan": "Sym Weaver S",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "54,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 65km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "impes_v": {
+                "ten_chuan": "Sym Impes V",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "25,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 78km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 3 năm đối với pin."
+                    }
+                }
+            },
+            "feliz_lite": {
+                "ten_chuan": "Sym Feliz Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "28,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 4000W, Pin LFP, Tốc độ đa 78km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 4 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "max": {
+                "ten_chuan": "Sym Max",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "36,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 200km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "vento_evo": {
+                "ten_chuan": "Sym Vento Evo",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "17,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Pin LFP, Tốc độ đa 50km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "pansy_alpha": {
+                "ten_chuan": "Sym Pansy Alpha",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "48,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 2000W, Acquy Chì, Tốc độ đa 100km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 3 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "od3_beta": {
+                "ten_chuan": "Sym Od3 Beta",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "52,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1000W, Acquy Chì, Tốc độ đa 50km/h, Quãng đường 120km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            },
+            "theon_lite": {
+                "ten_chuan": "Sym Theon Lite",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "52,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 1500W, Pin Lithium-ion, Tốc độ đa 100km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 5 năm đối với xe và 10 năm đối với pin."
+                    }
+                }
+            },
+            "impes_pro": {
+                "ten_chuan": "Sym Impes Pro",
+                "attributes": {
+                    "gia_ca": {
+                        "value": "34,000,000 VNĐ"
+                    },
+                    "thong_so": {
+                        "value": "Động cơ 3000W, Pin LFP, Tốc độ đa 65km/h, Quãng đường 90km/lần sạc."
+                    },
+                    "bao_hanh": {
+                        "value": "Bảo hành chính hãng 2 năm đối với xe và 5 năm đối với pin."
+                    }
+                }
+            }
+        }
+    }
+}

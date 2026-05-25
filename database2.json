@@ -1,0 +1,1004 @@
+{
+  "xe_may_dien": {
+    "vinfast_alpha": {
+      "ten": "VinFast Alpha",
+      "gia": 26000000,
+      "cs": 3000,
+      "td": 78,
+      "qd": 198,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "vinfast_beta": {
+      "ten": "VinFast Beta",
+      "gia": 26800000,
+      "cs": 3060,
+      "td": 81,
+      "qd": 202,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "vinfast_gamma": {
+      "ten": "VinFast Gamma",
+      "gia": 27600000,
+      "cs": 3120,
+      "td": 84,
+      "qd": 206,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "vinfast_delta": {
+      "ten": "VinFast Delta",
+      "gia": 28400000,
+      "cs": 3180,
+      "td": 78,
+      "qd": 210,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "vinfast_omega": {
+      "ten": "VinFast Omega",
+      "gia": 29200000,
+      "cs": 3240,
+      "td": 81,
+      "qd": 198,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "vinfast_zeta": {
+      "ten": "VinFast Zeta",
+      "gia": 30000000,
+      "cs": 3300,
+      "td": 84,
+      "qd": 202,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "vinfast_sigma": {
+      "ten": "VinFast Sigma",
+      "gia": 30800000,
+      "cs": 3360,
+      "td": 78,
+      "qd": 206,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "vinfast_matrix": {
+      "ten": "VinFast Matrix",
+      "gia": 31600000,
+      "cs": 3420,
+      "td": 81,
+      "qd": 210,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "vinfast_phantom": {
+      "ten": "VinFast Phantom",
+      "gia": 32400000,
+      "cs": 3480,
+      "td": 84,
+      "qd": 198,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "vinfast_titan": {
+      "ten": "VinFast Titan",
+      "gia": 33200000,
+      "cs": 3540,
+      "td": 78,
+      "qd": 202,
+      "pin": "Pin LFP",
+      "bh_x": 3,
+      "bh_p": 5
+    },
+    "yadea_alpha": {
+      "ten": "Yadea Alpha",
+      "gia": 21500000,
+      "cs": 2200,
+      "td": 55,
+      "qd": 90,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "yadea_beta": {
+      "ten": "Yadea Beta",
+      "gia": 22300000,
+      "cs": 2260,
+      "td": 58,
+      "qd": 94,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "yadea_gamma": {
+      "ten": "Yadea Gamma",
+      "gia": 23100000,
+      "cs": 2320,
+      "td": 61,
+      "qd": 98,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "yadea_delta": {
+      "ten": "Yadea Delta",
+      "gia": 23900000,
+      "cs": 2380,
+      "td": 55,
+      "qd": 102,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "yadea_omega": {
+      "ten": "Yadea Omega",
+      "gia": 24700000,
+      "cs": 2440,
+      "td": 58,
+      "qd": 90,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "yadea_zeta": {
+      "ten": "Yadea Zeta",
+      "gia": 25500000,
+      "cs": 2500,
+      "td": 61,
+      "qd": 94,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "yadea_sigma": {
+      "ten": "Yadea Sigma",
+      "gia": 26300000,
+      "cs": 2560,
+      "td": 55,
+      "qd": 98,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "yadea_matrix": {
+      "ten": "Yadea Matrix",
+      "gia": 27100000,
+      "cs": 2620,
+      "td": 58,
+      "qd": 102,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "yadea_phantom": {
+      "ten": "Yadea Phantom",
+      "gia": 27900000,
+      "cs": 2680,
+      "td": 61,
+      "qd": 90,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "yadea_titan": {
+      "ten": "Yadea Titan",
+      "gia": 28700000,
+      "cs": 2740,
+      "td": 55,
+      "qd": 94,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 3
+    },
+    "pega_alpha": {
+      "ten": "Pega Alpha",
+      "gia": 15000000,
+      "cs": 1500,
+      "td": 50,
+      "qd": 80,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "pega_beta": {
+      "ten": "Pega Beta",
+      "gia": 15800000,
+      "cs": 1560,
+      "td": 53,
+      "qd": 84,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "pega_gamma": {
+      "ten": "Pega Gamma",
+      "gia": 16600000,
+      "cs": 1620,
+      "td": 56,
+      "qd": 88,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "pega_delta": {
+      "ten": "Pega Delta",
+      "gia": 17400000,
+      "cs": 1680,
+      "td": 50,
+      "qd": 92,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "pega_omega": {
+      "ten": "Pega Omega",
+      "gia": 18200000,
+      "cs": 1740,
+      "td": 53,
+      "qd": 80,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "pega_zeta": {
+      "ten": "Pega Zeta",
+      "gia": 19000000,
+      "cs": 1800,
+      "td": 56,
+      "qd": 84,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "pega_sigma": {
+      "ten": "Pega Sigma",
+      "gia": 19800000,
+      "cs": 1860,
+      "td": 50,
+      "qd": 88,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "pega_matrix": {
+      "ten": "Pega Matrix",
+      "gia": 20600000,
+      "cs": 1920,
+      "td": 53,
+      "qd": 92,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "pega_phantom": {
+      "ten": "Pega Phantom",
+      "gia": 21400000,
+      "cs": 1980,
+      "td": 56,
+      "qd": 80,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "pega_titan": {
+      "ten": "Pega Titan",
+      "gia": 22200000,
+      "cs": 2040,
+      "td": 50,
+      "qd": 84,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dat_bike_alpha": {
+      "ten": "Dat Bike Alpha",
+      "gia": 59000000,
+      "cs": 6000,
+      "td": 90,
+      "qd": 200,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dat_bike_beta": {
+      "ten": "Dat Bike Beta",
+      "gia": 59800000,
+      "cs": 6060,
+      "td": 93,
+      "qd": 204,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dat_bike_gamma": {
+      "ten": "Dat Bike Gamma",
+      "gia": 60600000,
+      "cs": 6120,
+      "td": 96,
+      "qd": 208,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dat_bike_delta": {
+      "ten": "Dat Bike Delta",
+      "gia": 61400000,
+      "cs": 6180,
+      "td": 90,
+      "qd": 212,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dat_bike_omega": {
+      "ten": "Dat Bike Omega",
+      "gia": 62200000,
+      "cs": 6240,
+      "td": 93,
+      "qd": 200,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dat_bike_zeta": {
+      "ten": "Dat Bike Zeta",
+      "gia": 63000000,
+      "cs": 6300,
+      "td": 96,
+      "qd": 204,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dat_bike_sigma": {
+      "ten": "Dat Bike Sigma",
+      "gia": 63800000,
+      "cs": 6360,
+      "td": 90,
+      "qd": 208,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dat_bike_matrix": {
+      "ten": "Dat Bike Matrix",
+      "gia": 64600000,
+      "cs": 6420,
+      "td": 93,
+      "qd": 212,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dat_bike_phantom": {
+      "ten": "Dat Bike Phantom",
+      "gia": 65400000,
+      "cs": 6480,
+      "td": 96,
+      "qd": 200,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dat_bike_titan": {
+      "ten": "Dat Bike Titan",
+      "gia": 66200000,
+      "cs": 6540,
+      "td": 90,
+      "qd": 204,
+      "pin": "Lithium-ion",
+      "bh_x": 3,
+      "bh_p": 10
+    },
+    "dibao_alpha": {
+      "ten": "Dibao Alpha",
+      "gia": 18000000,
+      "cs": 1200,
+      "td": 45,
+      "qd": 75,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dibao_beta": {
+      "ten": "Dibao Beta",
+      "gia": 18800000,
+      "cs": 1260,
+      "td": 48,
+      "qd": 79,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dibao_gamma": {
+      "ten": "Dibao Gamma",
+      "gia": 19600000,
+      "cs": 1320,
+      "td": 51,
+      "qd": 83,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dibao_delta": {
+      "ten": "Dibao Delta",
+      "gia": 20400000,
+      "cs": 1380,
+      "td": 45,
+      "qd": 87,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dibao_omega": {
+      "ten": "Dibao Omega",
+      "gia": 21200000,
+      "cs": 1440,
+      "td": 48,
+      "qd": 75,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dibao_zeta": {
+      "ten": "Dibao Zeta",
+      "gia": 22000000,
+      "cs": 1500,
+      "td": 51,
+      "qd": 79,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dibao_sigma": {
+      "ten": "Dibao Sigma",
+      "gia": 22800000,
+      "cs": 1560,
+      "td": 45,
+      "qd": 83,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dibao_matrix": {
+      "ten": "Dibao Matrix",
+      "gia": 23600000,
+      "cs": 1620,
+      "td": 48,
+      "qd": 87,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dibao_phantom": {
+      "ten": "Dibao Phantom",
+      "gia": 24400000,
+      "cs": 1680,
+      "td": 51,
+      "qd": 75,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "dibao_titan": {
+      "ten": "Dibao Titan",
+      "gia": 25200000,
+      "cs": 1740,
+      "td": 45,
+      "qd": 79,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_alpha": {
+      "ten": "Anbico Alpha",
+      "gia": 16500000,
+      "cs": 1000,
+      "td": 45,
+      "qd": 70,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_beta": {
+      "ten": "Anbico Beta",
+      "gia": 17300000,
+      "cs": 1060,
+      "td": 48,
+      "qd": 74,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_gamma": {
+      "ten": "Anbico Gamma",
+      "gia": 18100000,
+      "cs": 1120,
+      "td": 51,
+      "qd": 78,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_delta": {
+      "ten": "Anbico Delta",
+      "gia": 18900000,
+      "cs": 1180,
+      "td": 45,
+      "qd": 82,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_omega": {
+      "ten": "Anbico Omega",
+      "gia": 19700000,
+      "cs": 1240,
+      "td": 48,
+      "qd": 70,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_zeta": {
+      "ten": "Anbico Zeta",
+      "gia": 20500000,
+      "cs": 1300,
+      "td": 51,
+      "qd": 74,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_sigma": {
+      "ten": "Anbico Sigma",
+      "gia": 21300000,
+      "cs": 1360,
+      "td": 45,
+      "qd": 78,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_matrix": {
+      "ten": "Anbico Matrix",
+      "gia": 22100000,
+      "cs": 1420,
+      "td": 48,
+      "qd": 82,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_phantom": {
+      "ten": "Anbico Phantom",
+      "gia": 22900000,
+      "cs": 1480,
+      "td": 51,
+      "qd": 70,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "anbico_titan": {
+      "ten": "Anbico Titan",
+      "gia": 23700000,
+      "cs": 1540,
+      "td": 45,
+      "qd": 74,
+      "pin": "Ắc quy chì",
+      "bh_x": 2,
+      "bh_p": 1
+    },
+    "osakar_alpha": {
+      "ten": "Osakar Alpha",
+      "gia": 19000000,
+      "cs": 1400,
+      "td": 48,
+      "qd": 80,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "osakar_beta": {
+      "ten": "Osakar Beta",
+      "gia": 19800000,
+      "cs": 1460,
+      "td": 51,
+      "qd": 84,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "osakar_gamma": {
+      "ten": "Osakar Gamma",
+      "gia": 20600000,
+      "cs": 1520,
+      "td": 54,
+      "qd": 88,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "osakar_delta": {
+      "ten": "Osakar Delta",
+      "gia": 21400000,
+      "cs": 1580,
+      "td": 48,
+      "qd": 92,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "osakar_omega": {
+      "ten": "Osakar Omega",
+      "gia": 22200000,
+      "cs": 1640,
+      "td": 51,
+      "qd": 80,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "osakar_zeta": {
+      "ten": "Osakar Zeta",
+      "gia": 23000000,
+      "cs": 1700,
+      "td": 54,
+      "qd": 84,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "osakar_sigma": {
+      "ten": "Osakar Sigma",
+      "gia": 23800000,
+      "cs": 1760,
+      "td": 48,
+      "qd": 88,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "osakar_matrix": {
+      "ten": "Osakar Matrix",
+      "gia": 24600000,
+      "cs": 1820,
+      "td": 51,
+      "qd": 92,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "osakar_phantom": {
+      "ten": "Osakar Phantom",
+      "gia": 25400000,
+      "cs": 1880,
+      "td": 54,
+      "qd": 80,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "osakar_titan": {
+      "ten": "Osakar Titan",
+      "gia": 26200000,
+      "cs": 1940,
+      "td": 48,
+      "qd": 84,
+      "pin": "Ắc quy Graphene",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "honda_ev_alpha": {
+      "ten": "Honda EV Alpha",
+      "gia": 35000000,
+      "cs": 2500,
+      "td": 60,
+      "qd": 100,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "honda_ev_beta": {
+      "ten": "Honda EV Beta",
+      "gia": 35800000,
+      "cs": 2560,
+      "td": 63,
+      "qd": 104,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "honda_ev_gamma": {
+      "ten": "Honda EV Gamma",
+      "gia": 36600000,
+      "cs": 2620,
+      "td": 66,
+      "qd": 108,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "honda_ev_delta": {
+      "ten": "Honda EV Delta",
+      "gia": 37400000,
+      "cs": 2680,
+      "td": 60,
+      "qd": 112,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "honda_ev_omega": {
+      "ten": "Honda EV Omega",
+      "gia": 38200000,
+      "cs": 2740,
+      "td": 63,
+      "qd": 100,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "honda_ev_zeta": {
+      "ten": "Honda EV Zeta",
+      "gia": 39000000,
+      "cs": 2800,
+      "td": 66,
+      "qd": 104,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "honda_ev_sigma": {
+      "ten": "Honda EV Sigma",
+      "gia": 39800000,
+      "cs": 2860,
+      "td": 60,
+      "qd": 108,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "honda_ev_matrix": {
+      "ten": "Honda EV Matrix",
+      "gia": 40600000,
+      "cs": 2920,
+      "td": 63,
+      "qd": 112,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "honda_ev_phantom": {
+      "ten": "Honda EV Phantom",
+      "gia": 41400000,
+      "cs": 2980,
+      "td": 66,
+      "qd": 100,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "honda_ev_titan": {
+      "ten": "Honda EV Titan",
+      "gia": 42200000,
+      "cs": 3040,
+      "td": 60,
+      "qd": 104,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_alpha": {
+      "ten": "Yamaha EV Alpha",
+      "gia": 34000000,
+      "cs": 2300,
+      "td": 60,
+      "qd": 95,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_beta": {
+      "ten": "Yamaha EV Beta",
+      "gia": 34800000,
+      "cs": 2360,
+      "td": 63,
+      "qd": 99,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_gamma": {
+      "ten": "Yamaha EV Gamma",
+      "gia": 35600000,
+      "cs": 2420,
+      "td": 66,
+      "qd": 103,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_delta": {
+      "ten": "Yamaha EV Delta",
+      "gia": 36400000,
+      "cs": 2480,
+      "td": 60,
+      "qd": 107,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_omega": {
+      "ten": "Yamaha EV Omega",
+      "gia": 37200000,
+      "cs": 2540,
+      "td": 63,
+      "qd": 95,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_zeta": {
+      "ten": "Yamaha EV Zeta",
+      "gia": 38000000,
+      "cs": 2600,
+      "td": 66,
+      "qd": 99,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_sigma": {
+      "ten": "Yamaha EV Sigma",
+      "gia": 38800000,
+      "cs": 2660,
+      "td": 60,
+      "qd": 103,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_matrix": {
+      "ten": "Yamaha EV Matrix",
+      "gia": 39600000,
+      "cs": 2720,
+      "td": 63,
+      "qd": 107,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_phantom": {
+      "ten": "Yamaha EV Phantom",
+      "gia": 40400000,
+      "cs": 2780,
+      "td": 66,
+      "qd": 95,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "yamaha_ev_titan": {
+      "ten": "Yamaha EV Titan",
+      "gia": 41200000,
+      "cs": 2840,
+      "td": 60,
+      "qd": 99,
+      "pin": "Pin Lithium",
+      "bh_x": 3,
+      "bh_p": 3
+    },
+    "evgo_alpha": {
+      "ten": "Evgo Alpha",
+      "gia": 27300000,
+      "cs": 1980,
+      "td": 51,
+      "qd": 72,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "evgo_beta": {
+      "ten": "Evgo Beta",
+      "gia": 28100000,
+      "cs": 2040,
+      "td": 54,
+      "qd": 76,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "evgo_gamma": {
+      "ten": "Evgo Gamma",
+      "gia": 28900000,
+      "cs": 2100,
+      "td": 57,
+      "qd": 80,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "evgo_delta": {
+      "ten": "Evgo Delta",
+      "gia": 29700000,
+      "cs": 2160,
+      "td": 51,
+      "qd": 84,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "evgo_omega": {
+      "ten": "Evgo Omega",
+      "gia": 30500000,
+      "cs": 2220,
+      "td": 54,
+      "qd": 72,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "evgo_zeta": {
+      "ten": "Evgo Zeta",
+      "gia": 31300000,
+      "cs": 2280,
+      "td": 57,
+      "qd": 76,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "evgo_sigma": {
+      "ten": "Evgo Sigma",
+      "gia": 32100000,
+      "cs": 2340,
+      "td": 51,
+      "qd": 80,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "evgo_matrix": {
+      "ten": "Evgo Matrix",
+      "gia": 32900000,
+      "cs": 2400,
+      "td": 54,
+      "qd": 84,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "evgo_phantom": {
+      "ten": "Evgo Phantom",
+      "gia": 33700000,
+      "cs": 2460,
+      "td": 57,
+      "qd": 72,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    },
+    "evgo_titan": {
+      "ten": "Evgo Titan",
+      "gia": 34500000,
+      "cs": 2520,
+      "td": 51,
+      "qd": 76,
+      "pin": "Pin Lithium",
+      "bh_x": 2,
+      "bh_p": 2
+    }
+  }
+}

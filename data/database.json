@@ -1,0 +1,73 @@
+{
+  "thong_tin_chung": {
+    "danh_sach_xe": "Hiện tại showroom chúng tôi đang phân phối chính hãng các dòng xe máy điện thông minh bao gồm: {danh_sach_xe}."
+  },
+  "xe_may_dien": {
+    "vinfast_feliz_s": {
+      "ten_chuan": "VinFast Feliz S",
+      "attributes": {
+        "gia_ca": {
+          "label": "giá bán chính thức, chi phí mua xe, giá bao nhiêu tiền, lăn bánh hết bao nhiêu lúa",
+          "value": "29.900.000 VNĐ (chưa kèm pin)"
+        },
+        "thong_so": {
+          "label": "thông số kỹ thuật, vận tốc tối đa, động cơ, pin chạy được bao nhiêu cây, tốc độ tối đa",
+          "value": "Động cơ Inhub 3000W, Pin LFP, Tốc độ tối đa 78km/h, Quãng đường 198km/lần sạc."
+        },
+        "bao_hanh": {
+          "label": "chính sách bảo hành, sửa chữa, lỗi nhà sản xuất, bảo dưỡng mấy năm, bảo hành pin",
+          "value": "Bảo hành chính hãng 3 năm không giới hạn số km đối với xe, và 5 năm đối với pin LFP."
+        }
+      }
+    },
+    "vinfast_impes": {
+      "ten_chuan": "VinFast Impes",
+      "attributes": {
+        "gia_ca": {
+          "label": "giá bán chính thức, chi phí mua xe, giá bao nhiêu tiền, lăn bánh hết bao nhiêu lúa",
+          "value": "14.900.000 VNĐ (chưa kèm pin)"
+        },
+        "thong_so": {
+          "label": "thông số kỹ thuật, vận tốc tối đa, động cơ, pin chạy được bao nhiêu cây, tốc độ tối đa",
+          "value": "Động cơ Inhub 2000W, Pin LFP, Tốc độ tối đa 78km/h, Quãng đường 70km/lần sạc."
+        },
+        "bao_hanh": {
+          "label": "chính sách bảo hành, sửa chữa, lỗi nhà sản xuất, bảo dưỡng mấy năm, bảo hành pin",
+          "value": "Bảo hành chính hãng 5 năm không giới hạn số km đối với xe, và 6 năm đối với pin LFP."
+        }
+      }
+    },
+    "pega_s": {
+      "ten_chuan": "Pega S",
+      "attributes": {
+       "gia_ca": {
+          "label": "giá bán chính thức, chi phí mua xe, giá bao nhiêu tiền, lăn bánh hết bao nhiêu lúa",
+          "value": "30.900.000 VNĐ (chưa kèm pin)"
+        },
+        "thong_so": {
+          "label": "thông số kỹ thuật, vận tốc tối đa, động cơ, pin chạy được bao nhiêu cây, tốc độ tối đa",
+          "value": "Động cơ Inhub 3000W, Pin LFP, Tốc độ tối đa 80km/h, Quãng đường 80km/lần sạc."
+        },
+        "bao_hanh": {
+          "label": "chính sách bảo hành, sửa chữa, lỗi nhà sản xuất, bảo dưỡng mấy năm, bảo hành pin",
+          "value": "Bảo hành chính hãng 4 năm không giới hạn số km đối với xe, và 5 năm đối với pin LFP."
+        }
+      }
+    }
+  },
+  "phu_kien": {
+    "pin_lfp": {
+      "ten_chuan": "Pin LFP VinFast",
+      "attributes": {
+        "gia_ca": {
+          "label": "giá bán quả pin, cục pin bao nhiêu tiền, mua lẻ pin bao nhiêu",
+          "value": "19.900.000 VNĐ"
+        },
+        "thong_so": {
+          "label": "thông số dung lượng, tuổi thọ pin, chu kỳ sạc xả nền pin còn bao nhiêu",
+          "value": "Dung lượng 3.5 KWh, tuổi thọ lên tới 2000 chu kỳ sạc xả nền pin còn 70%."
+        }
+      }
+    }
+  }
+}

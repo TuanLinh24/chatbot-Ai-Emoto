@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Xe Máy Điện Local</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f6fb; color: #1a1a1a; margin: 0; padding: 0; }
+        .container { max-width: 760px; margin: 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 12px 30px rgba(0,0,0,.08); overflow: hidden; }
+        header { padding: 24px 32px; background: #0f4c81; color: white; }
+        header h1 { margin: 0; font-size: 24px; }
+        header p { margin: 8px 0 0; line-height: 1.6; }
+        .chat-box { padding: 24px 32px; min-height: 380px; }
+        .message { margin-bottom: 18px; }
+        .message.user { text-align: right; }
+        .message .bubble { display: inline-block; padding: 14px 18px; border-radius: 18px; max-width: 88%; line-height: 1.6; }
+        .message.user .bubble { background: #0f4c81; color: white; }
+        .message.bot .bubble { background: #eef3ff; color: #111; }
+        .input-area { display: flex; padding: 16px 32px 32px; gap: 12px; }
+        .input-area input { flex: 1; padding: 14px 16px; border-radius: 999px; border: 1px solid #ccd6e7; font-size: 16px; }
+        .input-area button { border: none; background: #0f4c81; color: white; font-size: 16px; padding: 14px 24px; border-radius: 999px; cursor: pointer; }
+        .input-area button:hover { background: #09355f; }
+        .hint { margin-top: 10px; color: #555; font-size: 14px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Chatbot Xe Máy Điện Local</h1>
+        <p>Hỏi thông tin về xe máy điện, giá, phụ kiện và FAQ. Mọi dữ liệu chạy hoàn toàn trên thiết bị của bạn.</p>
+    </header>
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-area">
+        <input id="question" type="text" placeholder="Nhập câu hỏi của bạn..." />
+        <button id="sendBtn">Gửi</button>
+    </div>
+    <div class="hint">Mẹo: hỏi tiếng Việt hoặc English — model, thời gian sạc / charging time, phạm vi / range, phụ kiện / accessories, giá / price.</div>
+</div>
+<script>
+    const chatBox = document.getElementById('chatBox');
+    const questionInput = document.getElementById('question');
+    const sendBtn = document.getElementById('sendBtn');
+
+    function addMessage(text, role) {
+        const wrapper = document.createElement('div');
+        wrapper.className = `message ${role}`;
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        bubble.textContent = text;
+        wrapper.appendChild(bubble);
+        chatBox.appendChild(wrapper);
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    const backendUrl = 'http://127.0.0.1:8000/api/chat';
+
+    async function sendQuestion() {
+        const question = questionInput.value.trim();
+        if (!question) return;
+        addMessage(question, 'user');
+        questionInput.value = '';
+        addMessage('Đang xử lý...', 'bot');
+        const lastBot = document.querySelector('.message.bot:last-child .bubble');
+
+        try {
+            const response = await fetch(backendUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question })
+            });
+            const data = await response.json();
+            lastBot.textContent = data.answer || data.error || 'Lỗi trả lời.';
+        } catch (err) {
+            lastBot.textContent = 'Không thể kết nối tới server.';
+        }
+    }
+
+    sendBtn.addEventListener('click', sendQuestion);
+    questionInput.addEventListener('keydown', event => {
+        if (event.key === 'Enter') sendQuestion();
+    });
+</script>
+</body>
+</html>

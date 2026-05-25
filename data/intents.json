@@ -1,0 +1,10 @@
+{
+  "danh_sach_xe": {
+    "samples": ["bên mình có những mẫu xe nào?", "liệt kê danh sách xe", "show cho tôi các loại xe hiện có", "có những dòng xe gì vậy em?", "xe điện bên mình gồm những loại nào"],
+    "response_template": "Hiện tại showroom đang có các dòng xe: {danh_sach_xe}. Anh/chị quan tâm dòng nào ạ?"
+  },
+  "chao_hoi": {
+    "samples": ["xin chào", "hi bạn", "chào em", "có ai ở đó không"],
+    "response_template": "Dạ em chào anh/chị, em là AI hỗ trợ xe điện. Anh/chị cần hỗ trợ gì ạ?"
+  }
+}
