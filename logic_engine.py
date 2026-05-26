@@ -240,26 +240,7 @@ class ChatbotEngine_V4:
                     print(f"⚠️ [Guardrail] Phát hiện lệch hướng ngữ nghĩa! Huỷ bỏ intent '{current_intent}' giả lập để đẩy xuống tầng xử lý sâu hơn.")
                     current_intent = None  # Hoá giải Intent sai lệch, cho phép câu hỏi đi xuống các tầng dưới
 
-        # 🚀 TẦNG 4: L2 CACHE
-        best_l2_match = None
-        max_l2_similarity = -1
-        matching_indices = [
-            i for i, cached_item in enumerate(self.l2_cache) 
-            if cached_item.get("entity") == current_entity and cached_item.get("intent") == current_intent
-        ]
         
-        if matching_indices:
-            cached_vectors = np.vstack([self.l2_cache[i]["vector"] for i in matching_indices])
-            similarities = np.dot(cached_vectors, query_vector.T).flatten()
-            max_idx = np.argmax(similarities)
-            if similarities[max_idx] >= self.l2_threshold:
-                max_l2_similarity = similarities[max_idx]
-                best_l2_match = self.l2_cache[matching_indices[max_idx]]
-                
-        if best_l2_match and max_l2_similarity >= self.l2_threshold:
-            final_reply = best_l2_match["reply"]
-            self.l1_cache[clean_query] = final_reply 
-            return final_reply, round(time.time() - start_time, 4), f"L2_HIT ({round(max_l2_similarity * 100, 1)}%)"
 
         # 🚀 TẦNG 5: BUSINESS LOGIC & DB EXTRACTION (ĐÃ XOÁ SỔ HOÀN TOÀN CROSS-CHECK KEYWORD)
         final_reply = None
@@ -287,6 +268,26 @@ class ChatbotEngine_V4:
                     final_reply = business_rules[current_intent]["missing_entity_response"]
                 else:
                     final_reply = None  # Nhường quyền cho LLM lập luận
+        # 🚀 TẦNG 4: L2 CACHE
+        best_l2_match = None
+        max_l2_similarity = -1
+        matching_indices = [
+            i for i, cached_item in enumerate(self.l2_cache) 
+            if cached_item.get("entity") == current_entity and cached_item.get("intent") == current_intent
+        ]
+        
+        if matching_indices:
+            cached_vectors = np.vstack([self.l2_cache[i]["vector"] for i in matching_indices])
+            similarities = np.dot(cached_vectors, query_vector.T).flatten()
+            max_idx = np.argmax(similarities)
+            if similarities[max_idx] >= self.l2_threshold:
+                max_l2_similarity = similarities[max_idx]
+                best_l2_match = self.l2_cache[matching_indices[max_idx]]
+                
+        if best_l2_match and max_l2_similarity >= self.l2_threshold:
+            final_reply = best_l2_match["reply"]
+            self.l1_cache[clean_query] = final_reply 
+            return final_reply, round(time.time() - start_time, 4), f"L2_HIT ({round(max_l2_similarity * 100, 1)}%)"
 
         # 🚀 TẦNG 6: PC FLASK LLM SERVER (Hệ thống sẽ rơi xuống đây mượt mà khi gặp câu hỏi khó)
         if not final_reply:

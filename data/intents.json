@@ -12,17 +12,14 @@
   "business_rules": {
     "gia_ca": {
       "samples": ["giá bán chính thức bao nhiêu tiền", "chi phí lăn bánh", "mua xe hết bao nhiêu", "bảng giá xe máy điện", "giá niêm yết chính thức"],
-      "keywords": ["giá", "nhiêu", "tiền", "phí", "bảng giá", "mua", "niêm yết", "lăn bánh", "triệu", "vnd"],
       "missing_entity_response": "Dạ, em hiểu anh/chị cần tham khảo giá bán, nhưng anh/chị đang quan tâm cụ thể hãng hay mẫu xe nào ạ (VD: VinFast Pansy V)?"
     },
     "thong_so": {
       "samples": ["thông số kỹ thuật chi tiết", "vận tốc tối đa đạt bao nhiêu", "dung lượng pin chạy được bao nhiêu km", "công suất động cơ bao nhiêu watt"],
-      "keywords": ["thông", "vận tốc", "tốc độ", "pin", "acquy", "ắc quy", "km", "sạc", "watt", "công suất", "động cơ", "cao", "nặng", "cốp", "xa", "dài", "rộng"],
       "missing_entity_response": "Dạ, em hiểu anh/chị cần tham khảo thông số, nhưng anh/chị đang quan tâm cụ thể hãng hay mẫu xe nào ạ?"
     },
     "bao_hanh": {
       "samples": ["chính sách bảo hành mấy năm", "sửa chữa xe gặp lỗi", "lịch bảo dưỡng định kỳ", "bảo hành pin như thế nào"],
-      "keywords": ["bảo hành", "sửa", "lỗi", "bảo dưỡng", "định kỳ", "trạm", "lâu", "hỏng", "bảo trì"],
       "missing_entity_response": "Dạ, em hiểu anh/chị cần hỏi về chính sách bảo hành, nhưng anh/chị đang quan tâm cụ thể hãng hay mẫu xe nào ạ?"
     }
   }
