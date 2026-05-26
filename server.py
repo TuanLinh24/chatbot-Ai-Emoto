@@ -5,21 +5,19 @@ from logic_engine import ChatbotEngine_V4
 # 1. Khởi tạo Flask App và Swagger UI
 app = Flask(__name__)
 app.config['SWAGGER'] = {
-    'title': 'API Chatbot Xe Máy Điện Cải Tiến Cache L1/L2',
+    'title': 'API Chatbot Xe Máy Điện Cải Tiến LAN Hybrid & Cache Ma Trận',
     'uiversion': 3
 }
 swagger = Swagger(app)
 
 # 2. Khởi tạo Backend Engine
-print("Khởi động Server với Flask và Swagger...")
+print("Khởi động Server kết hợp Edge-Inference và LAN LLM Routing...")
 engine = ChatbotEngine_V4(
     db_path="database_v2.json",
     intents_path="data/intents.json"
-    # Lưu ý: Đảm bảo onnx_model_path và tokenizer_path mặc định trong logic_engine2.py 
-    # khớp với đường dẫn thực tế của bạn, hoặc bạn có thể truyền thẳng vào đây.
 )
 
-# 3. API Endpoint Chatbot gốc
+# 3. API Endpoint Chatbot
 @app.route('/api/chat', methods=['POST'])
 def chat_endpoint():
     """
@@ -37,38 +35,25 @@ def chat_endpoint():
             message:
               type: string
               description: "Câu hỏi của khách hàng"
-              example: "xe Yadea Phantom Max giá bao nhiêu"
-            user_id:
-              type: string
-              description: "ID của người dùng (tùy chọn)"
-              example: "khachhang_01"
+              example: "xe máy điện đi ngập nước có sao không"
     responses:
       200:
-        description: Trả về câu trả lời thành công kèm trạng thái bộ nhớ đệm chi tiết
+        description: Trả về câu trả lời từ CSDL nội bộ hoặc từ Server LLM thông qua mạng nội bộ
         schema:
           type: object
           properties:
             reply:
               type: string
-              example: "Dạ, mẫu xe Yadea Phantom Max có giá là 29.900.000 VNĐ."
             status:
               type: string
-              example: "success"
             metrics:
               type: object
               properties:
                 response_time_seconds:
                   type: number
-                  format: float
-                  example: 0.025
                 cache_status:
                   type: string
-                  description: "Trạng thái bộ nhớ đệm: L1_HIT, L2_HIT (kèm % đồng nghĩa), hoặc CACHE_MISS"
-                  example: "L2_HIT (94.2%)"
-      400:
-        description: Thiếu tham số message
-      500:
-        description: Lỗi máy chủ (Server Error)
+                  description: "Trạng thái xử lý: L1_HIT, L2_HIT, PC_LLM_HIT hoặc CACHE_MISS"
     """
     try:
         data = request.get_json()
@@ -81,7 +66,7 @@ def chat_endpoint():
             
         user_message = data['message']
         
-        # Nhận diện trạng thái cache dạng chuỗi từ logic_engine mới
+        # Nhận câu trả lời và trạng thái định tuyến từ Engine mới
         bot_reply, process_time, cache_status = engine.get_response(user_message)
         
         return jsonify({
@@ -99,7 +84,7 @@ def chat_endpoint():
             "reply": f"Lỗi server tại endpoint chat: {str(e)}"
         }), 500
 
-# 4. API Endpoint Reload mới để đồng bộ dữ liệu từ giao diện UI
+# 4. API Endpoint Hot-Reload đồng bộ tri thức từ CMS
 @app.route('/api/reload', methods=['POST'])
 def reload_endpoint():
     """
@@ -109,24 +94,13 @@ def reload_endpoint():
       - Admin System Tools
     responses:
       200:
-        description: Đồng bộ dữ liệu và dọn sạch Cache thành công!
-        schema:
-          type: object
-          properties:
-            status:
-              type: string
-              example: "success"
-            message:
-              type: string
-              example: "Hệ thống AI Robot đã đồng bộ và dọn sạch bộ nhớ đệm L1/L2 thành công!"
-      500:
-        description: Lỗi nạp cấu hình cơ sở dữ liệu (JSON lỗi hoặc thiếu file)
+        description: Đồng bộ dữ liệu cục bộ và xây dựng lại không gian ma trận thành công!
     """
     try:
         engine.reload_database()
         return jsonify({
             "status": "success",
-            "message": "Hệ thống AI Robot đã đồng bộ và dọn sạch bộ nhớ đệm L1/L2 thành công!"
+            "message": "Hệ thống AI Robot đã đồng bộ dữ liệu mạng LAN và dọn sạch bộ nhớ đệm L1/L2 thành công!"
         }), 200
     except Exception as e:
         return jsonify({
@@ -135,4 +109,5 @@ def reload_endpoint():
         }), 500
 
 if __name__ == '__main__':
+    # Chạy trên tất cả interfaces mạng nội bộ tại port 8000
     app.run(host='0.0.0.0', port=8000, debug=False)

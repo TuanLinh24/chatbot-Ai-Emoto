@@ -31,7 +31,7 @@ class ChatbotEngine_V4:
         self.global_intent_threshold = 0.68  
         self.max_l2_size = 300
         
-        self.pc_llm_url = "http://192.168.1.50:11434/v1/chat"  
+        self.pc_llm_url = "http://192.168.1.91:11434/v1/chat"  
         self.reload_database()
         print("✅ Hệ thống Hybrid V4 sẵn sàng!")
 
@@ -95,8 +95,8 @@ class ChatbotEngine_V4:
 
         self.out_of_scope_phrases = [
             "hướng dẫn nấu ăn ngon tại nhà", "cách nấu cơm nấu phở luộc gà", "nghe bài hát mới của ca sĩ",
-            "lên kế hoạch đi đá bóng đá banh", "giải bài toán hình học đại số", "thời tiết hôm nay thế nào",
-            "chơi game giải trí trực tuyến", "làm bài thơ tình lãng mạn", "tâm sự chuyện tình cảm cá nhân"
+            "lên kế hoạch đi đá bóng đá banh", "toán học", "thời tiết hôm nay thế nào",
+            "chơi game giải trí trực tuyến", "làm thơ ca", "tâm sự", "Khoa học tự nhiên"
         ]
         out_vectors = [self._get_embedding(self._normalize_for_cache(phrase)) for phrase in self.out_of_scope_phrases]
         self.out_of_scope_matrix = np.vstack(out_vectors)
